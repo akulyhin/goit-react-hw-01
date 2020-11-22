@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import StatList from './StatList';
+import StatList from '../StatList';
+import './module.statistics.css';
 
 
 function Statistics({title, stats}) {

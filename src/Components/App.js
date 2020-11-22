@@ -1,7 +1,7 @@
 import React from 'react';
 import Product from './Product';
 import Profile from './Profile';
-import Statistics from './Statistics';
+import Statistics from './statistics/Statistics';
 import statisticalData from '../data/statistical-data.json';
 
 
