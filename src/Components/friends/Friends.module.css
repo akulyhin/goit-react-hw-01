@@ -1,9 +1,9 @@
-.friend-list {
+.friendList {
     max-width: 360px;
     margin: 0 auto;
 }
 
-.friend-list .item {
+.item {
     padding: 25px 10px;
     border: 1px solid #ddd;
     margin: 10px 0;
@@ -13,17 +13,20 @@
     justify-content: left;
 }
 
-.friend-list .name {
+.name {
     color: #000;
 }
 
-.friend-list .status {
+.offline {
     width: 15px;
     height: 15px;
     border-radius: 100%;
     background: red;
 }
 
-.friend-list .status.online {
+.online {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
     background: green;
 }

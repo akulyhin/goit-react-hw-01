@@ -1,4 +1,4 @@
-.transaction-history {
+.transactionHistory {
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
@@ -6,25 +6,25 @@
     box-shadow: 0 0 5px rgba(0,0,0, .1);
 }
 
-.transaction-history thead {
+thead {
     background: #00BCD5;
     color: #fff;
     text-transform: uppercase;
 }
 
-.transaction-history thead th {
+thead th {
     padding: 15px;
 }
 
-.transaction-history tbody {
+tbody {
     background: #fff;
 }
 
-.transaction-history tbody tr:nth-child(even) {
+tbody tr:nth-child(even) {
     background: #ECF1F4;
 }
 
-.transaction-history tbody td {
+tbody td {
     padding: 10px;
 }
 
