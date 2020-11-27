@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import StatList from './StatList';
-import './module.statistics.css';
+import './Statistics.css';
 
+const random = () => Math.floor(Math.random() * 256);
 
 function Statistics({title, stats}) {
     return (
@@ -11,8 +11,16 @@ function Statistics({title, stats}) {
     {title && (
   <h2 className="title">{title}</h2>
   )}
-
- <StatList stats={stats} />
+        
+    <ul className="stat-list">
+        {stats.map(({ id, label, percentage }) => {
+            return (
+                <li key={id} className="item" style={{ backgroundColor: `rgb(${random()}, ${random()}, ${random()})` }}>
+                    <span className="label">{label}</span>
+                    <span className="percentage">{percentage}%</span>
+                </li>
+        )})}    
+    </ul>
 </section>
         </>
     )
