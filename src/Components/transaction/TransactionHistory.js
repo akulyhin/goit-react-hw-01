@@ -1,32 +1,31 @@
-import React from 'react';
-import styles from './Transaction.module.css';
+import React from "react";
+import styles from "./Transaction.module.css";
 
-
-function TransactionHistory ({items}) {
-    return (
-        <>
-        <table className={styles.transactionHistory}>
+function TransactionHistory({ items }) {
+  return (
+    <>
+      <table className={styles.transactionHistory}>
         <thead>
-            <tr>
+          <tr>
             <th>Type</th>
             <th>Amount</th>
             <th>Currency</th>
-            </tr>
+          </tr>
         </thead>
         <tbody>
-        {items.map(({id, type, amount, currency}) => {
+          {items.map(({ id, type, amount, currency }) => {
             return (
-            <tr key={id}>
+              <tr key={id}>
                 <td>{type}</td>
                 <td>{amount}</td>
                 <td>{currency}</td>
-            </tr>
-            )
-        })}  
+              </tr>
+            );
+          })}
         </tbody>
-        </table>
-        </>
-    )
+      </table>
+    </>
+  );
 }
 
 export default TransactionHistory;
